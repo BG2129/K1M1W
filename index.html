@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rangkuman &amp; Prediksi Soal Kimia XII</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;600;800&display=swap">
+<style>
+:root{--bg:#eaf8ff;--card:#fff;--ink:#1f2a44;--mute:#5a6785;--line:#d6e6f2;--sun:#ffc93c;--coral:#ff6b6b;--mint:#22c1a8;--vio:#7b6cf6;--sky:#2fa4ff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#13203a;--card:#1c2c4d;--ink:#eef4ff;--mute:#a9b8d6;--line:#2e4268;color-scheme:dark}}
+*{box-sizing:border-box}
+html{scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Nunito",system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+h1,h2,h3{font-family:"Baloo 2","Trebuchet MS",sans-serif;line-height:1.2;margin:0}
+header{position:relative;overflow:hidden;text-align:center;padding:42px 18px 70px;background:linear-gradient(135deg,var(--sky),var(--vio) 60%,var(--coral));color:#fff}
+header h1{font-size:clamp(1.8rem,6vw,3rem);font-weight:800}
+header p{margin:8px auto 0;max-width:560px;opacity:.95}
+.bub{position:absolute;border-radius:50%;background:rgba(255,255,255,.22);animation:fl 7s ease-in-out infinite}
+.bub:nth-child(1){width:90px;height:90px;left:6%;top:20%}.bub:nth-child(2){width:50px;height:50px;left:80%;top:12%;animation-delay:-2s}
+.bub:nth-child(3){width:130px;height:130px;left:70%;top:55%;animation-delay:-4s}.bub:nth-child(4){width:34px;height:34px;left:25%;top:70%;animation-delay:-1s}
+@keyframes fl{50%{transform:translateY(-16px)}}
+.wave{position:absolute;bottom:-1px;left:0;width:100%;height:46px}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:16px}
+.chips span{background:rgba(255,255,255,.25);padding:4px 12px;border-radius:99px;font-weight:800;font-size:.85rem}
+nav{position:sticky;top:0;z-index:10;display:flex;gap:8px;justify-content:center;padding:10px;background:var(--bg);border-bottom:2px dashed var(--line)}
+nav button{font:inherit;font-weight:800;border:0;border-radius:99px;padding:9px 20px;background:var(--card);color:var(--ink);cursor:pointer;box-shadow:0 2px 0 var(--line)}
+nav button[aria-selected="true"]{background:var(--sun);color:#3a2a00}
+button:focus-visible,summary:focus-visible{outline:3px solid var(--vio);outline-offset:2px}
+main{max-width:980px;margin:0 auto;padding:18px 14px 50px}
+.panel{display:none}.panel.on{display:block}
+.jump{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 18px}
+.jump a{font-size:.82rem;font-weight:800;text-decoration:none;color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:99px;padding:2px 10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+.card{background:var(--card);border-radius:20px;padding:16px 18px;border-top:8px solid var(--c);box-shadow:0 6px 0 var(--line)}
+.card h2{font-size:1.2rem;display:flex;gap:10px;align-items:center;margin-bottom:8px}
+.card h2 i{font-style:normal;display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--c);font-size:1.3rem;flex:none}
+.card ul{margin:0;padding-left:20px}.card li{margin:4px 0}
+.card .f{background:var(--bg);border-left:5px solid var(--c);border-radius:8px;padding:6px 10px;margin:8px 0;font-weight:700;overflow-x:auto}
+.box{background:linear-gradient(135deg,var(--sun),#ffe9a0);color:#3a2a00;border-radius:20px;padding:14px 18px;margin:0 0 18px;font-weight:700}
+.box h3{margin-bottom:4px}
+.q{background:var(--card);border-radius:18px;padding:14px 16px;margin:0 0 14px;box-shadow:0 5px 0 var(--line)}
+.q p{margin:0 0 8px;font-weight:700}
+.opt{display:block;width:100%;text-align:left;font:inherit;background:var(--bg);color:var(--ink);border:2px solid var(--line);border-radius:12px;padding:8px 12px;margin:6px 0;cursor:pointer}
+.opt.ok{background:#c9f7e5;border-color:var(--mint);color:#064e3b}.opt.no{background:#ffd9d9;border-color:var(--coral);color:#7a1212}
+.ex{display:none;margin-top:8px;padding:8px 12px;border-radius:12px;background:#fff6d6;color:#3a2a00;font-size:.95rem}
+.score{position:sticky;top:62px;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:8px;background:var(--vio);color:#fff;border-radius:99px;padding:6px 8px 6px 18px;margin-bottom:14px;font-weight:800}
+.score button{font:inherit;font-weight:800;border:0;border-radius:99px;padding:5px 14px;background:#fff;color:var(--vio);cursor:pointer}
+details{background:var(--card);border-radius:16px;padding:10px 16px;margin:0 0 12px;box-shadow:0 4px 0 var(--line)}
+summary{font-weight:800;cursor:pointer}
+details div{margin-top:8px;padding:8px 12px;background:#fff6d6;color:#3a2a00;border-radius:12px}
+footer{text-align:center;padding:20px;color:var(--mute);font-weight:700}
+@media (prefers-reduced-motion:reduce){.bub{animation:none}}
+</style>
+</head>
+<body>
+<header>
+<span class="bub"></span><span class="bub"></span><span class="bub"></span><span class="bub"></span>
+<h1>🧪 Kimia Kelas XII</h1>
+<p>Rangkuman materi dan prediksi soal untuk ujian akhir semester. Baca ringkasannya, lalu uji dirimu.</p>
+<div class="chips"><span>⚗️ Koligatif</span><span>🔋 Elektrokimia</span><span>🧬 Senyawa Karbon</span><span>💎 Benzena</span></div>
+<svg class="wave" viewBox="0 0 1200 46" preserveAspectRatio="none"><path d="M0 24C150 46 300 0 450 18s300 28 450 8 220-8 300 0V46H0Z" fill="#eaf8ff"/></svg>
+</header>
+<nav role="tablist">
+<button role="tab" aria-selected="true" data-t="r">📚 Rangkuman</button>
+<button role="tab" aria-selected="false" data-t="s">🎯 Prediksi Soal</button>
+</nav>
+<main>
+<section id="r" class="panel on">
+<div class="box"><h3>⚡ Rumus kilat</h3>
+ΔT<sub>b</sub> = K<sub>b</sub>·m·i &nbsp;|&nbsp; ΔT<sub>f</sub> = K<sub>f</sub>·m·i &nbsp;|&nbsp; π = M·R·T·i &nbsp;|&nbsp; E°<sub>sel</sub> = E°<sub>katoda</sub> − E°<sub>anoda</sub> &nbsp;|&nbsp; massa = (Ar/valensi)·i·t / 96500</div>
+<div class="jump" id="jump"></div>
+<div class="grid" id="mat"></div>
+</section>
+<section id="s" class="panel">
+<div class="score"><span id="sc">Skor: 0 / 0</span><button id="rs">Ulangi</button></div>
+<h2 style="margin:6px 0 12px">📝 Pilihan ganda</h2>
+<div id="qs"></div>
+<h2 style="margin:20px 0 12px">✍️ Uraian</h2>
+<div id="ur"></div>
+</section>
+</main>
+<footer>Semangat ujiannya! Tidur cukup dan sarapan dulu ya 🌟</footer>
+<script>
+const M=[
+{i:"🌡️",c:"#2fa4ff",t:"Sifat Koligatif Nonelektrolit",p:[
+"Sifat larutan yang hanya bergantung pada <b>jumlah partikel zat terlarut</b>, bukan jenisnya.",
+"Molalitas: <b>m = (gram/Mr) × (1000/p)</b>, p = massa pelarut (gram).",
+"Penurunan tekanan uap: <b>ΔP = X<sub>t</sub>·P°</b> dan P = X<sub>p</sub>·P°.",
+"Kenaikan titik didih: <b>ΔT<sub>b</sub> = K<sub>b</sub>·m</b>, lalu T<sub>b</sub> = 100 + ΔT<sub>b</sub> (air).",
+"Penurunan titik beku: <b>ΔT<sub>f</sub> = K<sub>f</sub>·m</b>, lalu T<sub>f</sub> = 0 − ΔT<sub>f</sub> (air).",
+"Tekanan osmotik: <b>π = M·R·T</b> (R = 0,082 L·atm/mol·K, T dalam Kelvin).",
+"Nilai K<sub>b</sub> air = 0,52 dan K<sub>f</sub> air = 1,86 °C/m."]},
+{i:"⚡",c:"#ff6b6b",t:"Sifat Koligatif Elektrolit",p:[
+"Elektrolit terurai menjadi ion sehingga partikelnya lebih banyak.",
+"Faktor van’t Hoff: <b>i = 1 + (n − 1)α</b>, n = jumlah ion, α = derajat ionisasi.",
+"Elektrolit kuat: α = 1, jadi i = n. Contoh NaCl i = 2, CaCl<sub>2</sub> i = 3, Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub> i = 5.",
+"Semua rumus koligatif dikali i: <b>ΔT<sub>b</sub> = K<sub>b</sub>·m·i</b>, <b>π = M·R·T·i</b>.",
+"Konsentrasi sama: titik didih urut nonelektrolit &lt; elektrolit biner &lt; elektrolit terner."]},
+{i:"🔥",c:"#ffc93c",t:"Jenis Reaksi Redoks",p:[
+"<b>Oksidasi</b>: melepas elektron, biloks naik, mengikat oksigen. <b>Reduksi</b>: menerima elektron, biloks turun, melepas oksigen.",
+"<b>Oksidator</b> mengalami reduksi. <b>Reduktor</b> mengalami oksidasi.",
+"Aturan biloks: unsur bebas = 0, O = −2 (peroksida −1), H = +1 (hidrida −1), jumlah biloks senyawa netral = 0.",
+"Contoh: biloks Mn di KMnO<sub>4</sub> = +7, Cr di K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub> = +6.",
+"<b>Autoredoks (disproporsionasi)</b>: satu zat mengalami oksidasi dan reduksi sekaligus, misal Cl<sub>2</sub> dalam NaOH."]},
+{i:"⚖️",c:"#22c1a8",t:"Penyetaraan Reaksi Redoks",p:[
+"<b>Metode biloks</b>: samakan kenaikan dan penurunan biloks, lalu setarakan muatan dan atom lain.",
+"<b>Metode setengah reaksi</b>: pisahkan oksidasi dan reduksi, setarakan, samakan elektron, lalu jumlahkan.",
+"Suasana <b>asam</b>: tambah H<sub>2</sub>O di sisi kekurangan O, tambah H⁺ di sisi kekurangan H.",
+"Suasana <b>basa</b>: setarakan seperti asam, lalu tambahkan OH⁻ sebanyak H⁺ di kedua sisi.",
+"Contoh: <div class='f'>MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O</div>"]},
+{i:"🔋",c:"#7b6cf6",t:"Potensial Sel",p:[
+"<b>E°sel = E°katoda − E°anoda</b> (pakai potensial reduksi standar).",
+"E°sel positif berarti reaksi <b>spontan</b>. E°sel negatif berarti tidak spontan.",
+"Deret Volta: Li-K-Ba-Ca-Na-Mg-Al-Mn-Zn-Cr-Fe-Ni-Co-Sn-Pb-(H)-Cu-Hg-Ag-Pt-Au.",
+"Makin ke kiri: reduktor makin kuat, mudah dioksidasi. Makin ke kanan: oksidator makin kuat.",
+"Logam di kiri mendesak ion logam di kanannya dari larutan.",
+"Contoh: Zn (−0,76 V) dan Cu (+0,34 V) menghasilkan E°sel = <b>1,10 V</b>."]},
+{i:"🔌",c:"#2fa4ff",t:"Sel Elektrokimia",p:[
+"<b>Sel Volta</b>: reaksi spontan menghasilkan listrik. Anoda (−), katoda (+), ada jembatan garam.",
+"<b>Sel Elektrolisis</b>: listrik memicu reaksi tidak spontan. Anoda (+), katoda (−).",
+"Di kedua sel: <b>anoda = oksidasi</b>, <b>katoda = reduksi</b> (ingat KRAO).",
+"Notasi sel: <div class='f'>anoda | ion anoda || ion katoda | katoda</div>",
+"<b>Katoda elektrolisis</b>: ion K⁺ sampai Mn²⁺ dan Al³⁺ tidak tereduksi, air yang tereduksi (H₂ + OH⁻). Logam lain (Zn²⁺ ke kanan) tereduksi menjadi logam.",
+"<b>Anoda inert (Pt, C)</b>: sisa asam oksi (SO₄²⁻, NO₃⁻) tidak teroksidasi, air yang teroksidasi (O₂ + H⁺). Halida (Cl⁻, Br⁻, I⁻) menjadi halogen.",
+"Anoda non-inert (Cu, Ag, dll.) ikut teroksidasi."]},
+{i:"📐",c:"#ff6b6b",t:"Hukum Faraday",p:[
+"<b>Hukum I</b>: massa zat sebanding dengan muatan listrik. <div class='f'>w = (e · i · t) / 96500</div>",
+"e = Ar/valensi (massa ekuivalen), i = arus (A), t = waktu (detik).",
+"Mol elektron = <b>i·t / 96500</b>. 1 Faraday = 96.500 C = 1 mol elektron.",
+"<b>Hukum II</b>: seri sel, <b>w₁ : w₂ = e₁ : e₂</b>.",
+"Gas pada STP: 1 mol = 22,4 L. Gunakan perbandingan mol elektron untuk mencari volume."]},
+{i:"🍷",c:"#22c1a8",t:"Alkohol (R–OH)",p:[
+"Gugus fungsi <b>–OH</b>, rumus umum <b>C<sub>n</sub>H<sub>2n+1</sub>OH</b>, nama alkanol.",
+"Jenis: <b>primer</b> (OH pada C ujung), <b>sekunder</b> (OH pada C tengah), <b>tersier</b>.",
+"Oksidasi: primer → aldehida → asam karboksilat. Sekunder → keton. <b>Tersier tidak teroksidasi</b>.",
+"Bereaksi dengan logam Na menghasilkan alkoksida dan gas H₂. Dengan asam karboksilat menghasilkan ester.",
+"Titik didih tinggi karena ikatan hidrogen. Isomer fungsi dengan <b>eter</b>."]},
+{i:"🧴",c:"#ffc93c",t:"Aldehida dan Keton",p:[
+"<b>Aldehida</b>: gugus <b>–CHO</b> di ujung rantai, nama alkanal. Contoh: metanal (formalin), etanal.",
+"<b>Keton</b>: gugus <b>–CO–</b> di tengah rantai, nama alkanon. Contoh: propanon (aseton).",
+"Rumus umum keduanya <b>C<sub>n</sub>H<sub>2n</sub>O</b> dan saling berisomer fungsi.",
+"<b>Uji Tollens</b>: aldehida menghasilkan cermin perak. <b>Uji Fehling</b>: aldehida menghasilkan endapan merah bata Cu₂O.",
+"Keton <b>tidak</b> bereaksi dengan Tollens dan Fehling.",
+"Aldehida dapat dioksidasi menjadi asam karboksilat, dan direduksi menjadi alkohol primer."]},
+{i:"💨",c:"#7b6cf6",t:"Eter (R–O–R′)",p:[
+"Gugus fungsi <b>–O–</b>, nama alkoksi alkana. Contoh: metoksi etana.",
+"Rumus umum <b>C<sub>n</sub>H<sub>2n+2</sub>O</b>, isomer fungsi dengan alkohol.",
+"<b>Tidak bereaksi dengan logam Na</b>. Ini pembeda utama dengan alkohol.",
+"Titik didih lebih rendah dari alkohol (tanpa ikatan hidrogen antarmolekul). Dietil eter dipakai sebagai pelarut dan bius."]},
+{i:"🍋",c:"#2fa4ff",t:"Asam Karboksilat dan Ester",p:[
+"<b>Asam karboksilat</b>: gugus <b>–COOH</b>, nama asam alkanoat. Contoh: asam metanoat (format), asam etanoat (asetat).",
+"Rumus umum <b>C<sub>n</sub>H<sub>2n</sub>O<sub>2</sub></b>, bersifat asam lemah, bereaksi dengan basa dan logam aktif.",
+"<b>Ester</b>: gugus <b>–COO–</b>, nama alkil alkanoat. Aroma buah-buahan.",
+"<b>Esterifikasi</b>: <div class='f'>asam karboksilat + alkohol ⇌ ester + H₂O (katalis H₂SO₄ pekat)</div>",
+"Hidrolisis ester menghasilkan asam dan alkohol. Hidrolisis basa disebut <b>penyabunan</b>.",
+"Asam karboksilat dan ester berisomer fungsi, contoh asam propanoat dan metil etanoat."]},
+{i:"💎",c:"#ff6b6b",t:"Benzena dan Turunannya",p:[
+"Benzena <b>C₆H₆</b>: cincin 6 karbon, ikatan rangkap selang-seling, struktur <b>resonansi</b>, stabil.",
+"Turunan: toluena (–CH₃), fenol (–OH), anilin (–NH₂), asam benzoat (–COOH), nitrobenzena (–NO₂), stirena.",
+"Posisi disubstitusi: <b>orto (1,2)</b>, <b>meta (1,3)</b>, <b>para (1,4)</b>.",
+"Reaksi <b>substitusi</b>: nitrasi (HNO₃ + H₂SO₄), halogenasi (Br₂ + FeBr₃), sulfonasi (H₂SO₄), alkilasi Friedel-Crafts (R–Cl + AlCl₃).",
+"Pengarah <b>orto/para</b>: –OH, –NH₂, –CH₃, –X. Pengarah <b>meta</b>: –NO₂, –COOH, –CHO, –SO₃H.",
+"Gugus fungsi senyawa karbon: alkohol, eter, aldehida, keton, asam karboksilat, ester."]}
+];
+const Q=[
+["Sebanyak 12 g urea (Mr 60) dilarutkan dalam 500 g air. Jika K<sub>b</sub> = 0,52, titik didih larutan adalah ...",["100,104 °C","100,208 °C","100,416 °C","99,792 °C"],1,"m = (12/60)×(1000/500) = 0,4. ΔT<sub>b</sub> = 0,52×0,4 = 0,208, jadi T<sub>b</sub> = 100,208 °C."],
+["5,85 g NaCl (Mr 58,5) dalam 250 g air, K<sub>f</sub> = 1,86, α = 1. Titik beku larutan ...",["−0,744 °C","−1,488 °C","−0,372 °C","−2,232 °C"],1,"mol = 0,1, m = 0,4, i = 2. ΔT<sub>f</sub> = 1,86×0,4×2 = 1,488, jadi T<sub>f</sub> = −1,488 °C."],
+["Tekanan osmotik larutan glukosa 0,1 M pada 27 °C (R = 0,082) adalah ...",["1,23 atm","2,46 atm","24,6 atm","0,246 atm"],1,"π = M·R·T = 0,1 × 0,082 × 300 = 2,46 atm. Ingat suhu dalam Kelvin."],
+["Larutan berikut dengan konsentrasi sama yang titik didihnya paling tinggi adalah ...",["Glukosa","NaCl","CaCl₂","Urea"],2,"CaCl₂ terurai menjadi 3 ion (i = 3), paling banyak partikelnya, sehingga ΔT<sub>b</sub> paling besar."],
+["Bilangan oksidasi Cr dalam K₂Cr₂O₇ adalah ...",["+3","+6","+7","+12"],1,"2(+1) + 2x + 7(−2) = 0, maka 2x = 12 dan x = +6."],
+["Pada reaksi MnO₄⁻ + Fe²⁺ → Mn²⁺ + Fe³⁺ (suasana asam), koefisien Fe²⁺ setelah disetarakan adalah ...",["1","3","5","7"],2,"Mn turun 5 (+7 ke +2), Fe naik 1. Maka perbandingan MnO₄⁻ : Fe²⁺ = 1 : 5."],
+["Diketahui E°Zn²⁺/Zn = −0,76 V dan E°Cu²⁺/Cu = +0,34 V. E°sel Zn|Zn²⁺||Cu²⁺|Cu adalah ...",["−1,10 V","−0,42 V","+0,42 V","+1,10 V"],3,"E°sel = E°katoda − E°anoda = 0,34 − (−0,76) = +1,10 V (spontan)."],
+["Elektrolisis larutan Na₂SO₄ dengan elektroda Pt menghasilkan ... di katoda dan ... di anoda.",["Na dan O₂","H₂ dan O₂","H₂ dan SO₂","Na dan SO₄"],1,"Na⁺ tidak tereduksi, air yang tereduksi menghasilkan H₂. SO₄²⁻ tidak teroksidasi, air yang teroksidasi menghasilkan O₂."],
+["Arus 5 A dialirkan 1930 detik ke larutan CuSO₄ (Ar Cu = 63,5). Massa Cu yang mengendap adalah ...",["1,59 g","3,175 g","6,35 g","0,318 g"],1,"mol e⁻ = 5×1930/96500 = 0,1. Cu²⁺ + 2e⁻ → Cu, jadi mol Cu = 0,05 dan massa = 0,05×63,5 = 3,175 g."],
+["Oksidasi 2-propanol menghasilkan ...",["Propanal","Propanon","Asam propanoat","Propena"],1,"2-propanol adalah alkohol sekunder, hasil oksidasinya keton, yaitu propanon."],
+["Senyawa yang memberi hasil positif pada uji Tollens adalah ...",["Propanon","Etanal","Metoksi metana","Etanol"],1,"Hanya aldehida (etanal) yang mereduksi pereaksi Tollens menjadi cermin perak."],
+["Isomer fungsi dari asam butanoat (C₄H₈O₂) adalah ...",["Butanol","Butanal","Metil propanoat","Dietil eter"],2,"Asam karboksilat berisomer fungsi dengan ester. Metil propanoat juga C₄H₈O₂."],
+["Pereaksi untuk membedakan etanol dan dimetil eter adalah ...",["Logam Na","Air","NaCl","Kertas lakmus"],0,"Etanol bereaksi dengan Na menghasilkan gas H₂, sedangkan eter tidak bereaksi."],
+["Nitrasi toluena terutama menghasilkan ...",["Meta-nitrotoluena","Orto dan para-nitrotoluena","Hanya benzena","Asam benzoat"],1,"Gugus –CH₃ adalah pengarah orto dan para."]
+];
+const U=[
+["Hitung titik beku larutan 18 g glukosa (Mr 180) dalam 200 g air (K<sub>f</sub> = 1,86).","m = (18/180)×(1000/200) = 0,5. ΔT<sub>f</sub> = 1,86×0,5 = 0,93. T<sub>f</sub> = <b>−0,93 °C</b>."],
+["Sel volta tersusun dari Mg (E° = −2,37 V) dan Ag (E° = +0,80 V). Tentukan anoda, katoda, notasi sel, dan E°sel.","Anoda: Mg (E° lebih kecil), katoda: Ag. Notasi: <b>Mg | Mg²⁺ || Ag⁺ | Ag</b>. E°sel = 0,80 − (−2,37) = <b>+3,17 V</b>."],
+["Tuliskan reaksi esterifikasi asam etanoat dengan etanol, lengkap dengan nama produk.","CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O (katalis H₂SO₄ pekat). Produk: <b>etil etanoat</b> dan air."]
+];
+const $=s=>document.querySelector(s);
+$("#mat").innerHTML=M.map((m,k)=>`<article class="card" id="m${k}" style="--c:${m.c}"><h2><i>${m.i}</i>${m.t}</h2><ul>${m.p.map(x=>`<li>${x}</li>`).join("")}</ul></article>`).join("");
+$("#jump").innerHTML=M.map((m,k)=>`<a href="#m${k}">${m.i} ${m.t.split(" ")[0]}</a>`).join("");
+let ok=0,done=0;
+function build(){ok=0;done=0;upd();
+$("#qs").innerHTML=Q.map((q,n)=>`<div class="q" data-n="${n}"><p>${n+1}. ${q[0]}</p>${q[1].map((o,j)=>`<button class="opt" data-j="${j}">${"ABCD"[j]}. ${o}</button>`).join("")}<div class="ex"></div></div>`).join("");}
+function upd(){$("#sc").textContent=`Skor: ${ok} / ${done}`}
+$("#qs").addEventListener("click",e=>{const b=e.target.closest(".opt");if(!b)return;const q=b.closest(".q");if(q.dataset.d)return;q.dataset.d=1;
+const n=+q.dataset.n,j=+b.dataset.j,a=Q[n][2];done++;if(j===a)ok++;
+q.querySelectorAll(".opt")[a].classList.add("ok");if(j!==a)b.classList.add("no");
+const x=q.querySelector(".ex");x.style.display="block";x.innerHTML=(j===a?"✅ Benar! ":"❌ Jawaban: "+"ABCD"[a]+". ")+Q[n][3];upd();});
+$("#rs").onclick=build;
+$("#ur").innerHTML=U.map((u,n)=>`<details><summary>${n+1}. ${u[0]}</summary><div>${u[1]}</div></details>`).join("");
+document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>{document.querySelectorAll("nav button").forEach(x=>x.setAttribute("aria-selected",x===b));
+document.querySelectorAll(".panel").forEach(p=>p.classList.toggle("on",p.id===b.dataset.t));window.scrollTo({top:0})});
+build();
+</script>
+</body>
+</html>
